@@ -1,0 +1,1495 @@
+{
+    "description": "Liver Vessel Segmentation",
+    "labels": {
+        "0": "background",
+        "1": "arterial",
+        "2": "venous"
+    },
+    "licence": "yt",
+    "modality": {
+        "0": "CT"
+    },
+    "name": "Vessel_all",
+    "numTest": 14,
+    "numTraining": 265,
+    "numValidation": 15,
+    "reference": "Zhejiang University",
+    "release": "11/12/2024",
+    "tensorImageSize": "3D",
+    "test": [
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian021_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian021_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian021_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian037_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian037_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian037_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian015_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian015_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian015_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian036_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian036_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian036_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_082_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_082_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_082_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_059_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_059_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_059_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_086_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_086_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_086_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_073_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_073_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_073_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_018_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_018_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_018_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_061_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_061_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_061_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_057_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_057_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_057_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_027_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_027_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_027_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_040_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_040_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_040_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_079_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_079_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_079_0002.nii.gz"
+        }
+    ],
+    "training": [
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian026_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian026_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian026_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian015_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian015_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian015_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian041_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian041_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian041_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian052_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian052_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian052_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian040_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian040_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian040_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian050_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian050_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian050_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian049_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian049_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian049_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian006_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian006_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian006_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian033_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian033_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian033_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian034_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian034_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian034_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian030_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian030_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian030_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian039_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian039_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian039_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian031_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian031_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian031_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian028_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian028_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian028_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian022_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian022_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian022_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian007_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian007_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian007_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian024_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian024_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian024_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian010_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian010_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian010_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian017_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian017_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian017_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian033_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian033_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian033_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian046_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian046_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian046_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian025_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian025_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian025_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian042_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian042_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian042_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian040_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian040_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian040_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian034_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian034_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian034_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian023_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian023_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian023_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian013_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian013_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian013_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian016_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian016_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian016_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian045_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian045_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian045_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian012_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian012_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian012_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian038_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian038_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian038_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian029_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian029_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian029_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian032_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian032_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian032_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian035_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian035_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian035_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian045_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian045_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian045_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian043_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian043_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian043_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian010_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian010_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian010_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian024_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian024_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian024_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian042_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian042_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian042_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian013_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian013_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian013_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian051_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian051_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian051_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian002_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian002_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian002_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian001_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian001_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian001_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian011_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian011_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian011_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian012_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian012_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian012_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian048_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian048_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian048_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian046_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian046_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian046_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian005_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian005_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian005_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian036_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian036_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian036_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian014_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian014_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian014_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian041_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian041_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian041_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian009_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian009_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian009_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian020_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian020_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian020_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian032_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian032_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian032_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian006_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian006_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian006_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian048_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian048_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian048_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian023_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian023_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian023_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian022_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian022_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian022_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian007_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian007_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian007_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian016_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian016_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian016_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian004_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian004_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian004_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian043_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian043_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian043_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian003_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian003_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian003_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian027_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian027_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian027_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian047_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian047_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian047_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian008_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian008_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian008_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian011_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian011_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian011_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian050_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian050_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian050_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian002_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian002_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian002_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian009_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian009_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian009_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian003_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian003_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian003_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian047_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian047_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian047_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian028_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian028_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian028_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian019_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian019_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian019_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian025_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian025_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian025_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian030_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian030_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian030_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian037_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian037_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian037_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian017_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian017_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian017_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian053_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian053_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian053_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian038_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian038_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian038_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian053_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian053_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian053_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian031_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian031_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian031_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian019_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian019_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian019_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian008_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian008_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian008_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian020_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian020_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian020_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian021_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian021_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian021_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian018_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian018_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian018_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian044_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian044_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian044_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian014_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian014_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian014_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian039_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian039_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian039_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian044_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian044_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian044_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian001_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian001_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian001_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian035_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian035_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian035_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian005_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian005_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian005_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian004_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian004_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian004_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_045_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_045_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_045_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_092_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_092_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_092_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_066_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_066_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_066_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_016_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_016_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_016_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_092_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_092_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_092_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_080_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_080_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_080_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_019_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_019_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_019_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_021_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_021_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_021_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_088_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_088_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_088_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_002_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_002_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_002_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_069_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_069_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_069_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_004_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_004_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_004_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_024_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_024_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_024_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_083_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_083_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_083_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_087_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_087_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_087_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_045_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_045_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_045_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_042_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_042_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_042_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_049_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_049_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_049_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_072_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_072_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_072_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_080_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_080_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_080_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_079_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_079_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_079_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_052_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_052_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_052_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_009_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_009_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_009_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_078_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_078_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_078_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_047_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_047_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_047_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_031_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_031_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_031_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_094_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_094_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_094_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_090_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_090_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_090_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_054_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_054_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_054_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_010_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_010_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_010_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_084_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_084_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_084_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_082_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_082_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_082_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_044_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_044_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_044_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_039_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_039_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_039_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_038_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_038_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_038_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_090_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_090_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_090_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_010_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_010_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_010_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_077_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_077_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_077_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_049_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_049_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_049_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_035_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_035_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_035_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_048_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_048_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_048_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_017_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_017_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_017_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_025_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_025_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_025_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_023_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_023_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_023_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_089_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_089_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_089_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_070_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_070_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_070_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_002_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_002_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_002_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_024_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_024_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_024_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_077_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_077_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_077_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_059_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_059_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_059_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_038_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_038_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_038_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_001_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_001_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_001_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_008_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_008_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_008_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_007_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_007_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_007_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_070_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_070_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_070_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_036_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_036_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_036_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_071_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_071_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_071_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_068_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_068_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_068_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_030_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_030_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_030_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_065_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_065_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_065_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_057_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_057_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_057_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_066_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_066_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_066_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_094_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_094_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_094_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_003_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_003_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_003_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_022_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_022_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_022_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_081_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_081_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_081_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_011_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_011_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_011_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_031_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_031_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_031_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_043_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_043_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_043_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_087_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_087_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_087_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_030_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_030_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_030_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_017_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_017_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_017_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_050_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_050_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_050_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_043_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_043_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_043_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_025_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_025_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_025_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_036_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_036_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_036_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_003_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_003_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_003_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_050_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_050_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_050_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_044_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_044_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_044_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_063_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_063_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_063_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_053_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_053_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_053_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_046_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_046_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_046_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_047_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_047_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_047_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_006_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_006_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_006_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_093_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_093_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_093_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_091_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_091_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_091_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_033_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_033_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_033_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_058_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_058_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_058_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_076_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_076_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_076_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_064_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_064_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_064_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_028_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_028_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_028_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_032_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_032_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_032_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_042_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_042_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_042_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_078_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_078_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_078_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_074_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_074_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_074_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_074_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_074_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_074_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_028_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_028_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_028_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_068_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_068_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_068_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_084_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_084_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_084_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_015_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_015_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_015_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_026_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_026_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_026_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_000_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_000_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_000_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_037_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_037_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_037_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_023_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_023_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_023_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_020_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_020_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_020_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_014_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_014_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_014_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_005_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_005_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_005_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_014_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_014_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_014_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_086_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_086_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_086_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_053_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_053_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_053_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_088_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_088_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_088_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_072_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_072_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_072_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_076_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_076_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_076_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_060_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_060_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_060_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_004_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_004_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_004_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_048_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_048_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_048_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_085_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_085_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_085_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_029_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_029_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_029_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_041_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_041_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_041_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_012_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_012_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_012_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_013_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_013_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_013_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_005_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_005_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_005_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_040_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_040_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_040_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_069_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_069_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_069_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_032_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_032_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_032_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_067_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_067_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_067_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_071_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_071_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_071_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_083_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_083_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_083_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_046_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_046_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_046_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_008_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_008_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_008_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_091_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_091_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_091_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_020_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_020_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_020_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_067_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_067_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_067_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_001_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_001_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_001_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_075_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_075_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_075_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_029_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_029_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_029_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_027_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_027_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_027_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_012_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_012_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_012_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_062_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_062_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_062_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_035_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_035_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_035_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_051_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_051_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_051_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_054_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_054_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_054_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_022_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_022_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_022_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_056_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_056_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_056_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_037_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_037_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_037_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_052_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_052_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_052_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_000_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_000_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_000_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_055_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_055_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_055_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_034_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_034_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_034_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_064_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_064_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_064_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_009_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_009_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_009_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_016_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_016_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_016_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_063_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_063_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_063_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_055_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_055_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_055_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_034_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_034_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_034_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_062_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_062_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_062_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_011_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_011_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_011_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_006_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_006_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_006_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_039_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_039_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_039_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_041_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_041_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_041_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_085_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_085_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_085_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_021_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_021_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_021_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_013_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_013_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_013_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_075_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_075_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_075_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_081_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_081_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_081_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_051_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_051_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_051_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_056_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_056_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_056_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_073_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_073_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_073_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_058_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_058_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_058_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_018_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_018_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_018_0001.nii.gz"
+        }
+    ],
+    "validation": [
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian029_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian029_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian029_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian026_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian026_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian026_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian051_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian051_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian051_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian018_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian018_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian018_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian049_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian049_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian049_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian052_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian052_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian052_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian027_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian027_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian027_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_060_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_060_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_060_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_061_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_061_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_061_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_033_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_033_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_033_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_007_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_007_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_007_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_093_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_093_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_093_0002.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_089_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_089_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_089_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_065_0001.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_065_0001.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_065_0001.nii.gz"
+        },
+        {
+            "image": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_019_0002.nii.gz",
+            "label": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_019_0002.nii.gz",
+            "label_vessel": "/data0/scj/datasets/肝八段数据集/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_019_0002.nii.gz"
+        }
+    ]
+}

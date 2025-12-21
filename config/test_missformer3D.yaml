@@ -1,0 +1,62 @@
+MODEL:
+  DEVICE: cuda
+  NO_DISTRIBUTION: False
+  RESUME_EPOCH: -1
+  PRETRAIN_MODEL_PATH: ""
+  NOISY: ""
+  
+  UNETR: 
+    FEATURE_SIZE: 16
+    HIDDEN_SIZE: 768
+    MLP_DIM: 3072
+    NUM_HEADS: 12
+    POS_EMBED: perceptron
+    NORM_NAME: instance
+    CONV_BLOCK: True
+    RES_BLOCK: True
+    DROPOUT_RATE: 0.0    
+
+SOLVER:
+  LOSS_TYPE: dice
+  NUM_EPOCHS: 1500
+  LR_TYPE: cosine_anneal
+  OPTIMIZER_NAME: AdamW
+  BASE_LR: 3e-3
+  WEIGHT_DECAY: 1e-5
+
+INPUT:
+  NUM_CLASSES: 1
+
+OUTPUT:
+  NUM_CLASSES: 3
+
+DATA:
+  CACHE_NUM: 2
+  CACHE_RATE: 0.1
+  TRAIN_BATCHSIZE: 3
+  VAL_BATCHSIZE: 1
+  NUM_WORKERS: 4
+  SAMPLERS: distribute
+
+MONAI:
+  NAME: test_private
+  JSON_PATH: '/home/zhaozihao/Vessel_Segmentation/lib/datasets/data_json/'
+  TRANSFORMS:
+    KEYS: ['image','label']
+    SPACING: (1.0, 1.0, 1.0)
+    WINDOW: [-135.0, 315.0]
+    CLIP: True
+    ROI: (96,96,96)
+    RAND:
+      FILP_PROB: 0.2
+      SCALE_PROB: 0.1
+      SHIFT_PROB: 0.1
+
+SAVE_DIR: 
+  MODEL: '/data1/zzh/VesselSegModel/3DMISSFormer'
+
+
+TEST:
+  # MODEL_PATH: "/data1/zzh/VesselSegModel/3DMISSFormer/train/model_best.pth"
+  # MODEL_PATH: "/data1/zzh/VesselSegModel/3DMISSFormer/hep/model_best.pth"
+  MODEL_DIR: "/data1/zzh/VesselSegModel/3DMISSFormer/models/model_best.pth"

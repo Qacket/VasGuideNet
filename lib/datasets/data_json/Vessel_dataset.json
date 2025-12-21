@@ -1,0 +1,2300 @@
+{
+    "description": "Liver Vessel Segmentation",
+    "labels": {
+        "0": "background",
+        "1": "arterial",
+        "2": "venous"
+    },
+    "licence": "yt",
+    "modality": {
+        "0": "CT"
+    },
+    "name": "Vessel_all",
+    "numTest": 0,
+    "numTraining": 0,
+    "reference": "Zhejiang University",
+    "release": "11/12/2024",
+    "tensorImageSize": "3D",
+    "test": [
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_011_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_011_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_020_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_020_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_036_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_036_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_039_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_039_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_048_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_048_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_052_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_052_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian005_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian005_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian006_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian006_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian014_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian014_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian017_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian017_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_053_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_053_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_063_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_063_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_082_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_082_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_085_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_085_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_087_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_087_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_088_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_088_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian019_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian019_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian035_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian035_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian048_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian048_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian052_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian052_0001.nii.gz"
+        }
+    ],
+    "training": [
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian026_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian026_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian041_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian041_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian040_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian040_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian050_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian050_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian029_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian029_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian049_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian049_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian033_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian033_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian034_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian034_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian030_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian030_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian039_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian039_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian031_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian031_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian028_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian028_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian022_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian022_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian024_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian024_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian010_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian010_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian017_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian017_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian033_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian033_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian046_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian046_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian025_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian025_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian042_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian042_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian040_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian040_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian034_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian034_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian023_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian023_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian016_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian016_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian045_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian045_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian012_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian012_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian021_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian021_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian029_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian029_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian037_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian037_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian032_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian032_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian045_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian045_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian043_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian043_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian010_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian010_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian024_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian024_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian042_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian042_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian013_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian013_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian051_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian051_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian051_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian051_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian002_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian002_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian001_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian001_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian011_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian011_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian012_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian012_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian046_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian046_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian015_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian015_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian036_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian036_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian014_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian014_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian041_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian041_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian018_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian018_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian009_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian009_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian020_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian020_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian032_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian032_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian048_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian048_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian023_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian023_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian022_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian022_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian007_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian007_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian049_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian049_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian004_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian004_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian043_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian043_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian003_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian003_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian027_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian027_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian047_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian047_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian008_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian008_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian050_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian050_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian002_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian002_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian003_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian003_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian047_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian047_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian028_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian028_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian025_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian025_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian030_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian030_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian036_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian036_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian053_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian053_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian038_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian038_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian053_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian053_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian031_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian031_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian019_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian019_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian008_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian008_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian052_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian052_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian020_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian020_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian021_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian021_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian018_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian018_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian044_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian044_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian039_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian039_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian044_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian044_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian027_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian027_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian005_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian005_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian004_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian004_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_045_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_045_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_092_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_092_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_066_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_066_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_060_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_060_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_016_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_016_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_092_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_092_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_080_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_080_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_019_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_019_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_021_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_021_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_002_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_002_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_069_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_069_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_004_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_004_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_061_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_061_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_024_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_024_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_045_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_045_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_049_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_049_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_072_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_072_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_080_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_080_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_079_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_079_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_059_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_059_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_009_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_009_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_078_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_078_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_047_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_047_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_031_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_031_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_094_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_094_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_090_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_090_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_054_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_054_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_010_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_010_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_084_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_084_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_082_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_082_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_044_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_044_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_039_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_039_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_090_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_090_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_010_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_010_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_033_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_033_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_077_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_077_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_049_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_049_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_035_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_035_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_048_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_048_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_017_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_017_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_086_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_086_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_025_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_025_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_007_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_007_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_089_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_089_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_070_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_070_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_002_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_002_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_024_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_024_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_077_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_077_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_038_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_038_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_001_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_001_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_007_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_007_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_070_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_070_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_036_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_036_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_071_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_071_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_068_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_068_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_030_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_030_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_065_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_065_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_066_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_066_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_094_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_094_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_003_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_003_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_093_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_093_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_022_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_022_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_081_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_081_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_031_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_031_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_043_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_043_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_030_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_030_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_017_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_017_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_073_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_073_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_050_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_050_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_043_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_043_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_025_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_025_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_018_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_018_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_003_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_003_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_050_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_050_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_044_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_044_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_063_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_063_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_046_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_046_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_047_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_047_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_006_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_006_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_093_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_093_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_091_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_091_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_033_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_033_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_058_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_058_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_076_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_076_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_064_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_064_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_032_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_032_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_042_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_042_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_078_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_078_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_074_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_074_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_074_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_074_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_028_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_028_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_068_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_068_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_084_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_084_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_026_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_026_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_000_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_000_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_037_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_037_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_023_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_023_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_020_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_020_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_014_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_014_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_005_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_005_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_014_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_014_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_086_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_086_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_053_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_053_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_088_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_088_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_060_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_060_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_004_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_004_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_029_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_029_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_041_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_041_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_012_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_012_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_005_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_005_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_040_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_040_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_069_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_069_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_032_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_032_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_067_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_067_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_071_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_071_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_061_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_061_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_083_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_083_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_008_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_008_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_091_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_091_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_057_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_057_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_067_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_067_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_001_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_001_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_075_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_075_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_029_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_029_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_012_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_012_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_062_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_062_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_035_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_035_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_051_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_051_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_054_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_054_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_040_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_040_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_056_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_056_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_037_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_037_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_089_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_089_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_052_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_052_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_000_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_000_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_065_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_065_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_055_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_055_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_079_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_079_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_034_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_034_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_064_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_064_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_009_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_009_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_016_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_016_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_055_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_055_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_034_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_034_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_062_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_062_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_011_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_011_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_006_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_006_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_041_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_041_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_085_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_085_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_021_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_021_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_013_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_013_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_075_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_075_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_081_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_081_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_019_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_019_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_051_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_051_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_056_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_056_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_058_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_058_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_018_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_018_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_008.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_008.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_025.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_025.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_227.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_227.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_079.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_079.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_293.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_293.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_431.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_431.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_244.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_244.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_218.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_218.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_141.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_141.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_192.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_192.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_297.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_297.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_374.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_374.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_325.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_325.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_455.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_455.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_157.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_157.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_112.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_112.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_197.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_197.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_121.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_121.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_406.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_406.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_309.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_309.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_177.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_177.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_270.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_270.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_284.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_284.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_154.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_154.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_280.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_280.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_332.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_332.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_356.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_356.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_071.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_071.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_090.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_090.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_229.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_229.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_238.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_238.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_059.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_059.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_082.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_082.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_103.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_103.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_072.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_072.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_362.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_362.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_039.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_039.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_031.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_031.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_147.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_147.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_217.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_217.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_427.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_427.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_062.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_062.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_271.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_271.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_432.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_432.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_445.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_445.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_333.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_333.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_007.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_007.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_361.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_361.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_397.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_397.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_319.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_319.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_393.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_393.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_119.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_119.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_314.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_314.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_174.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_174.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_386.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_386.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_200.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_200.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_166.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_166.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_235.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_235.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_207.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_207.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_274.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_274.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_123.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_123.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_322.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_322.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_385.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_385.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_151.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_151.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_004.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_004.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_068.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_068.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_179.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_179.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_185.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_185.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_225.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_225.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_268.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_268.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_373.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_373.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_165.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_165.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_447.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_447.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_222.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_222.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_398.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_398.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_161.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_161.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_388.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_388.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_201.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_201.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_248.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_248.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_266.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_266.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_108.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_108.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_061.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_061.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_160.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_160.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_124.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_124.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_443.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_443.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_375.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_375.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_133.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_133.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_440.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_440.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_419.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_419.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_300.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_300.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_011.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_011.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_042.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_042.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_307.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_307.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_434.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_434.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_294.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_294.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_359.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_359.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_408.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_408.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_308.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_308.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_049.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_049.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_089.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_089.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_299.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_299.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_199.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_199.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_369.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_369.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_164.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_164.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_092.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_092.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_167.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_167.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_051.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_051.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_046.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_046.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_195.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_195.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_234.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_234.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_438.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_438.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_265.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_265.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_159.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_159.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_371.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_371.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_348.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_348.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_198.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_198.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_013.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_013.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_305.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_305.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_278.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_278.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_136.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_136.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_132.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_132.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_183.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_183.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_401.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_401.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_269.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_269.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_005.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_005.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_286.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_286.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_150.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_150.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_424.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_424.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_323.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_323.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_318.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_318.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_115.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_115.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_453.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_453.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_083.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_083.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_263.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_263.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_358.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_358.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_454.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_454.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_029.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_029.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_010.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_010.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_171.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_171.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_087.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_087.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_163.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_163.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_140.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_140.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_093.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_093.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_423.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_423.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_067.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_067.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_131.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_131.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_272.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_272.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_091.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_091.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_078.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_078.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_420.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_420.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_097.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_097.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_404.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_404.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_030.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_030.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_196.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_196.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_219.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_219.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_444.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_444.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_066.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_066.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_186.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_186.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_433.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_433.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_053.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_053.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_384.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_384.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_209.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_209.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_129.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_129.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_172.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_172.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_344.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_344.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_446.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_446.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_285.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_285.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_262.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_262.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_137.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_137.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_437.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_437.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_389.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_389.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_098.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_098.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_181.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_181.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_240.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_240.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_040.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_040.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_368.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_368.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_142.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_142.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_023.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_023.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_236.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_236.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_016.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_016.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_206.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_206.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_144.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_144.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_429.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_429.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_400.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_400.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_110.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_110.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_214.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_214.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_223.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_223.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_138.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_138.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_363.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_363.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_033.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_033.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_340.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_340.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_341.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_341.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_145.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_145.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_117.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_117.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_242.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_242.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_296.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_296.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_057.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_057.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_282.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_282.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_139.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_139.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_175.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_175.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_077.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_077.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_070.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_070.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_409.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_409.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_050.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_050.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_211.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_211.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_194.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_194.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_044.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_044.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_018.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_018.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_320.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_320.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_230.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_230.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_237.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_237.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_291.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_291.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_378.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_378.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_329.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_329.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_065.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_065.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_391.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_391.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_321.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_321.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_287.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_287.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_221.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_221.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_128.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_128.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_281.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_281.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_022.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_022.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_158.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_158.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_259.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_259.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_258.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_258.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_422.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_422.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_026.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_026.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_178.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_178.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_327.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_327.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_224.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_224.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_345.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_345.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_027.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_027.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_028.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_028.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_193.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_193.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_350.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_350.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_441.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_441.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_412.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_412.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_245.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_245.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_458.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_458.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_382.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_382.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_058.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_058.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_104.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_104.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_231.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_231.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_215.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_215.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_290.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_290.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_324.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_324.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_336.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_336.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_416.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_416.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_189.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_189.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_456.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_456.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_080.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_080.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_425.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_425.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_052.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_052.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_086.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_086.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_116.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_116.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_279.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_279.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_208.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_208.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_246.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_246.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_330.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_330.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_100.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_100.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_303.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_303.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_085.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_085.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_125.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_125.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_372.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_372.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_019.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_019.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_146.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_146.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_203.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_203.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_127.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_127.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_088.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_088.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_081.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_081.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_020.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_020.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_184.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_184.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_402.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_402.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_407.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_407.nii.gz"
+        }
+    ],
+    "validation": [
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian013_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian013_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian026_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian026_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian001_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian001_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/imagesTr/PuJian035_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/abdomen_3d_reconstruction/labelsTr/PuJian035_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_083_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_083_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_042_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_042_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_038_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_038_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_008_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_008_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_057_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_057_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_028_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_028_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_015_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_015_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_072_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_072_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_076_0002.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_076_0002.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_013_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_013_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_027_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_027_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_022_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_022_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/imagesTr/PuJian_20241109_073_0001.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/PuJian_20241109/labelsTr/PuJian_20241109_073_0001.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_256.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_256.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_379.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_379.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_113.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_113.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_096.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_096.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_210.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_210.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_075.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_075.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_173.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_173.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_233.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_233.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_289.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_289.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_383.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_383.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_213.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_213.nii.gz"
+        },
+        {
+            "image": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/imagesTr/hepaticvessel_084.nii.gz",
+            "label": "/data1/zzh/dataset_1210/Vessel/Task08_HepaticVessel/labelsTr/hepaticvessel_084.nii.gz"
+        }
+    ]
+}

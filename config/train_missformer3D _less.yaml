@@ -1,0 +1,66 @@
+MODEL:
+  DEVICE: cuda
+  NO_DISTRIBUTION: False
+  RESUME_EPOCH: -1
+  NAME: missformer3D
+  PRETRAIN_MODEL_PATH: ''
+  NOISY: ""
+
+  MISSFORMER:
+    TOKEN_MLP_MODE: "mix_skip"
+    HEADS: [1, 2, 5, 8]
+    REDUCTION_RATIOS: [8, 4, 2, 1]
+    BRIDGE_REDUCTION_RATIOS: [1, 2, 4, 8]
+    IN_OUT_CHAN: [[32, 64], [144, 128], [288, 320], [512, 512]]
+    DIMS: [64, 128, 320, 512]
+    LAYERS: [2, 2, 2, 2]
+    D_BASE_FEAT_SIZE: 3  # ROT[0|1] // 32
+    D_BASE_DEPTH_SIZE: 3  # ROT[2] // 32
+    # D_BASE_FEAT_SIZE: 1  # ROT[0|1] // 32
+    # D_BASE_DEPTH_SIZE: 1  # ROT[2] // 32
+    KERNEL_SIZES: [7, 3, 3, 3]
+    STRIDES: [4, 2, 2, 2]
+    PADDING_SIZES: [3, 1, 1, 1]
+    
+SOLVER:
+  LOSS_TYPE: dice_focal
+  NUM_EPOCHS: 500
+  LR_TYPE: cosine_anneal
+  OPTIMIZER_NAME: AdamW
+  BASE_LR: 1e-3
+  WEIGHT_DECAY: 1e-4
+
+INPUT:
+  NUM_CLASSES: 1
+  
+OUTPUT:
+  NUM_CLASSES: 3
+
+DATA:
+  CACHE_NUM: 0
+  CACHE_RATE: 0.1
+  NUM_WORKERS: 2
+  TRAIN_BATCHSIZE: 1
+  VAL_BATCHSIZE: 1
+  SAMPLERS: distribute
+
+MONAI:
+  NAME: less_Vessel_dataset
+  JSON_PATH: '/home/zhaozihao/Vessel_Segmentation'
+  TRANSFORMS:
+    KEYS: ['image','label']
+    SPACING: (1.0, 1.0, 1.0)
+    WINDOW: [-135.0, 315.0]
+    CLIP: True
+    ROI: (96, 96, 96) 
+    # ROI: (32, 32, 32) 
+    RAND:
+      FILP_PROB: 0.2
+      SCALE_PROB: 0.1
+      SHIFT_PROB: 0.1
+
+SAVE_DIR: 
+  MODEL: '/data1/zzh/VesselSegModel/3DMISSFormer'
+
+TEST:
+  MODEL_PATH: ""
